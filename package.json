@@ -1,0 +1,28 @@
+{
+  "name": "linkworker",
+  "version": "0.0.1",
+  "description": "FastPBX Link Message Broker",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/server.js",
+    "compile": "tsc",
+    "dev": "nodemon --watch '*.ts' --exec 'ts-node' src/server.ts"
+  },
+  "author": "David Melo <david.melo@fastpbx.com>",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.5.13",
+    "@types/body-parser": "^1.19.0",
+    "@types/express": "^4.17.6",
+    "@types/node": "^13.13.4",
+    "nodemon": "^2.0.3",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  }
+}
